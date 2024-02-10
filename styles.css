@@ -1,0 +1,275 @@
+
+/*  Variables  */
+:root{
+  --texto: 'Montserrat', sans-serif;
+  --titulo: 'Amiri', serif;
+  --dicho: 'Philosopher', sans-serif;
+  --filosofo: 'Tangerine', cursive;
+  --titulo_amarillo_trigo: #a7a230d6;
+  --titulo_fondo_claro: #42CF76;
+  --titulo_fondo_color: white;
+  --fondo_claro: white;
+  --prod_degrade_fuerte: #44b84d;
+  --prod_degrade_liviano: #f0f0f0;
+  --borde_li: rgba(0,0,0,.125);
+}
+
+
+
+/* ALL */
+
+p {
+  font-family: var(--texto);
+  margin: 0;
+}
+
+li{
+  font-family: var(--texto);
+  /*
+  line-height: 35px;
+  letter-spacing: 2px;
+  */
+}
+
+
+
+
+/* NAVBAR */
+
+.navbar-elements{
+  text-align: center
+}
+
+
+/* PRESENTACION */
+
+#presentacion::before{
+  content: "";
+  background-image: url("img/campo-trigo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#presentacion{
+  position: relative;
+  height: 55rem;
+  max-width: 100%;
+}
+
+.logo-presentacion{
+  width: 25rem;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+/* macbook pro */
+@media screen and (max-width: 1440px) {
+  #presentacion {
+    height: 40rem;
+  }
+}
+
+/* tablet*/
+@media screen and (max-width: 991px) {
+  #presentacion {
+    height: 40rem;
+  }
+
+  .logo-presentacion {
+    width: 20rem;
+  }
+}
+
+
+/* celu*/
+@media screen and (max-width: 575px) {
+  .logo-presentacion {
+    width: 15rem;
+  }
+}
+
+
+
+/* QUIENES SOMOS*/
+
+#quienes-somos{
+  padding: 10rem 18rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.7rem;
+  font-size: 1.4rem;
+  text-align: justify;
+  font-family: var(--texto);
+}
+
+.div-qs{
+  margin-bottom: 5rem;
+}
+
+.titulo-qs{
+  color: var(--titulo_amarillo_trigo);
+  font-family: var(--titulo);
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.boton-conocenos-mas{
+  background-color: inherit;
+  border-color: none;
+  color: grey;
+  letter-spacing: 0.1rem;
+  line-height: 2.7rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.row-button-colapse{
+  margin-top: 2rem;
+}
+
+.btn:hover{
+  color: none;
+  background-color: none;
+  border-color: none;
+}
+
+.accordion-item{
+  border: none;
+}
+
+.qsp{
+  width: 50%;
+}
+
+/* ipad pro*/
+@media screen and (max-width: 1024px) {
+  #quienes-somos {
+    padding: 10rem 8rem;
+  }
+}
+
+/* Samsung Galaxy S20 Ultra*/
+@media screen and (max-width: 412px) {
+  #quienes-somos {
+    padding: 7rem 1rem;
+    line-height: 2.10rem;
+    font-size: 1rem;
+  }
+
+  .div-qs{
+    margin-bottom: 2rem;
+  }
+
+  .boton-conocenos-mas{
+    letter-spacing: 0.1rem;
+    line-height: 1.8rem;
+    font-size: 1rem;
+
+  }
+
+}
+
+
+/*  PRODUCTOS  */
+
+
+.productos-div{
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  padding: 7rem 0;
+  letter-spacing: 0.1rem;
+  line-height: 2.7rem;
+  font-size: 1.4rem;
+  font-family: var(--texto);
+}
+
+.productos-div::before{
+  content: "";
+  background-image: url("img/campo_de_trigo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.productos-titulo{
+  padding: 0 0 5.5rem 0;
+  position: relative;
+}
+
+.columnas-productos{
+  row-gap: 3rem;
+}
+
+.producto-columna{
+  position: relative;
+}
+
+.prod-favicon{
+  color: black;
+}
+
+.fa-solid{
+  margin-bottom: 2rem;
+}
+
+.fa-2x{
+  font-size: 4rem;
+}
+
+
+
+
+/*  FIN PRODUCTOS  */
+
+
+
+/* FOOTER */
+
+#footer{
+  padding: 3rem 0 2rem;
+  text-align: center;
+  font-family: var(--texto);
+}
+
+.redes{
+  margin: 1.5rem 0.7rem;
+}
+
+.fa-whatsapp, .fa-instagram, .fa-envelope{
+  transition: transform .2s;
+}
+
+.fa-whatsapp:hover{
+  color: #00a884;
+  transform: scale(1.5);
+}
+
+.fa-instagram:hover{
+  color: #c83992;
+  transform: scale(1.5);
+}
+
+.fa-envelope:hover{
+  color: #006dbf;
+  transform: scale(1.5);
+}
+
+a{
+  text-decoration: none;
+}
