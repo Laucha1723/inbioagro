@@ -14,6 +14,10 @@
   --borde_li: rgba(0,0,0,.125);
 }
 
+html{
+  background-color: red;
+}
+
 
 
 /* ALL */
